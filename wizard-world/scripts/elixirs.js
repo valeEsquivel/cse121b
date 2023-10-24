@@ -1,4 +1,4 @@
-let url = `https://wizard-world-api.herokuapp.com/Elixirs`;
+let urlElixirs = `https://wizard-world-api.herokuapp.com/Elixirs`;
 const difficulty = document.querySelector("#difficulty");
 const searchElixirs = document.querySelector("#searchElixirs");
 const cardsE = document.querySelector("#cardsE");
@@ -7,9 +7,9 @@ const cardsE = document.querySelector("#cardsE");
 const fetchElixirs = async () => {
     try {
         if (difficulty.value) {
-            url = `https://wizard-world-api.herokuapp.com/Elixirs?Difficulty=${difficulty.value}`;
+            urlElixirs = `https://wizard-world-api.herokuapp.com/Elixirs?Difficulty=${difficulty.value}`;
         }
-        const response = await fetch(url);
+        const response = await fetch(urlElixirs);
         const elixirs = await response.json();
         displayElixirs(elixirs);
     } catch (error) {

@@ -1,4 +1,4 @@
-let url = `https://wizard-world-api.herokuapp.com/Spells`;
+let urlSpells = `https://wizard-world-api.herokuapp.com/Spells`;
 const type = document.querySelector("#type");
 const searchSpells = document.querySelector("#searchSpells");
 const cardsS = document.querySelector("#cardsS");
@@ -6,17 +6,17 @@ const cardsS = document.querySelector("#cardsS");
 const fetchSpells = async () => {
     try {
         if (type.value) {
-            url = `https://wizard-world-api.herokuapp.com/Spells?Type=${type.value}`;
+            urlSpells = `https://wizard-world-api.herokuapp.com/Spells?Type=${type.value}`;
         }
-        const response = await fetch(url);
+        const response = await fetch(urlSpells);
         const spells = await response.json();
-        displayResults(spells);
+        displaySpells(spells);
     } catch (error) {
         console.log(error);
     }
 };
 
-const displayResults = (spells) => {
+const displaySpells = (spells) => {
     cardsS.innerHTML = "";
     spells.forEach((spell) => {
         cardsS.innerHTML += `

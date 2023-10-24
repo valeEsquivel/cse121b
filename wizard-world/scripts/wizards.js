@@ -43,14 +43,13 @@ const fetchWizards = async () => {
         const response = await fetch(urlByNames + complementaryUrl);
         const wizards = await response.json();
         console.log(wizards);
-        displayResults(wizards[0]);
+        displayContent(wizards[0]);
     } catch (error) {
         console.log(error);
     }
 }
 
-const displayResults = (wizards) => {
-    console.log("🚀 ~ file: wizards.js:53 ~ displayResults ~ wizards:", wizards)
+const displayContent = (wizards) => {
     let section = document.createElement('section');
     section.classList.add('wizardsContainer');
 
