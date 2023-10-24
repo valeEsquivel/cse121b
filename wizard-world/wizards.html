@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizard World Spells and Elixirs | CSE 121b | Valeria Esquivel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="elixirs.html">Elixirs</a></li>
+            <li><a href="spells.html">Spells</a></li>
+            <li><a href="wizards.html" class="active">Wizards</a></li>
+        </ul>
+    </nav>
+    <main class="space">
+        <section class="pageTitle">
+            <h2>Wizards Potion and Elixir Creators</h2>
+            <hr>
+        </section>
+        <section class="choose">
+            <label for="wizardSelect">Wizard: </label>
+            <select name="wizardSelect" id="wizardSelect">
+                <option value="" disabled selected>Choose one Wizard</option>
+            </select>
+            <button class="search" id="searchPotions">Search</button>
+        </section>
+        <div id="cardsW"></div>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Wizarld World | CSE 121b
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/wizards.js"></script>
+</body>
+
+</html>

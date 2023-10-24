@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizard World Spells and Elixirs | CSE 121b | Valeria Esquivel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="elixirs.html">Elixirs</a></li>
+            <li><a href="spells.html" class="active">Spells</a></li>
+            <li><a href="wizards.html">Wizards</a></li>
+        </ul>
+    </nav>
+    <main class="space">
+        <section class="pageTitle">
+            <h2>List of Spells</h2>
+            <hr>
+        </section>
+        <section class="choose">
+            <label for="type">Type: </label>
+            <select id="type">
+                <option value="">--</option>
+                <option value="None">None</option>
+                <option value="Charm">Charm</option>
+                <option value="Conjuration">Conjuration</option>
+                <option value="Spell">Spell</option>
+                <option value="Transfiguration">Transfiguration</option>
+                <option value="HealingSpell">Healing Spell</option>
+                <option value="DarkCharm">Dark Charm</option>
+                <option value="Jinx">Jinx</option>
+                <option value="Curse">Curse</option>
+                <option value="MagicalTransportation">Magical Transportation</option>
+                <option value="Hex">Hex</option>
+                <option value="CounterSpell">Counter Spell</option>
+                <option value="DarkArts">Dark Arts</option>
+                <option value="CounterJinx">Counter Jinx</option>
+                <option value="CounterCharm">Counter Charm</option>
+                <option value="Untransfiguration">Untransfiguration</option>
+                <option value="BindingMagicalContract">Binding Magical Contract</option>
+                <option value="Vanishment">Vanishment</option>
+            </select>
+            <button class="search" id="searchSpells">Search</button>
+        </section>
+        <div id="cardsS"></div>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Wizarld World | CSE 121b
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/spells.js"></script>
+</body>
+
+</html>

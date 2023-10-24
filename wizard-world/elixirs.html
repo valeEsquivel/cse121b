@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizard World Spells and Elixirs | CSE 121b | Valeria Esquivel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="elixirs.html" class="active">Elixirs</a></li>
+            <li><a href="spells.html">Spells</a></li>
+            <li><a href="wizards.html">Wizards</a></li>
+        </ul>
+    </nav>
+    <main class="space">
+        <section class="pageTitle">
+            <h2>Elixirs</h2>
+            <hr>
+        </section>
+        <section class="choose">
+            <label for="difficulty">Difficulty: </label>
+            <select id="difficulty" name="difficulty">
+                <option value="">--</option>
+                <option value="Unknown">Unknown</option>
+                <option value="Advanced">Advanced</option>
+                <option value="Moderate">Moderate</option>
+                <option value="Beginner">Beginner</option>
+                <option value="OrdinaryWizardingLevel">Ordinary Wizarding Level</option>
+                <option value="OneOfAKind">One Of A Kind</option>
+            </select>
+            <button class="search" id="searchElixirs">Search</button>
+        </section>
+        <div id="cardsE"></div>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Wizarld World | CSE 121b
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/elixirs.js"></script>
+</body>
+
+</html>
